@@ -1,2 +1,6 @@
-var obj = G$('HB', 'Shifat','en');
-console.log(obj);
+var obj = G$('HB', 'Shifat');
+
+$('#login').on('click',function(){
+	var lang = $('#lang').val();
+	obj.setLang(lang).htmlSelector('#greeting',true);
+});
